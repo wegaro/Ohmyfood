@@ -1,0 +1,9 @@
+@use '../utils/variables' as u;
+
+body {
+    font-family: u.$font-primary;
+}
+
+h1, h2 {
+    font-family: u.$font-secondary;
+}

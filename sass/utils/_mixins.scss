@@ -1,0 +1,9 @@
+@use '../utils/variables' as *;
+
+@mixin button-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@mixin btn-color {
+    background: linear-gradient($color-secondary 0%, $color-primary 100%);
+ }

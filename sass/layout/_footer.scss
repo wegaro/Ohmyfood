@@ -1,0 +1,29 @@
+@use '../utils/variables' as *;
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $color-footer;
+    color: $color-white;
+    
+    &__logo {
+        font-size: 18px;
+        margin: 25px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        margin: 0px 0px 40px 25px;
+    }
+}
+
+.fa-utensils {
+    margin-right: 13px;
+}
+
+.fa-handshake-angle {
+    margin-right: 7px;
+}

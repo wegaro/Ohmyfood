@@ -2,6 +2,9 @@
 @forward './utils/variables';
 
 @forward "./layout/header.scss";
+@forward "./components/buttons.scss";
+@forward "./layout/nav.scss";
+@forward "./layout/cards.scss";
 @forward './base/typography';
 
 @forward "./layout/footer.scss";

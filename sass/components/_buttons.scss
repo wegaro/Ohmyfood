@@ -1,0 +1,14 @@
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.location__button {
+    border: none;
+    border-radius: 25px;
+    color: $color-white;
+    cursor: pointer;
+    font-size: 15px;
+    height: 45px;
+    @include btn-color;
+    @include btn-shadow;
+    width: 215px;
+}

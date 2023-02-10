@@ -1,0 +1,25 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.how-works {
+    padding: 50px 15px 40px 20px;
+    &__number {
+        background-color: $color-primary;
+        border-radius: 50%;
+        color: $color-white;
+        font-size: 14px;
+        left: -5px;
+        padding: 4px 8px;
+        position: relative;
+        top: 50px;
+    }
+    &__step {
+        background-color: $bg-light-grey;
+        border-radius: 20px;
+        height: 70px;
+        @include btn-shadow;
+        @include flex-center;
+        margin: 5px;
+        font-weight: 500;
+    }
+}

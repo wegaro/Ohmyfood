@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: $color-footer;
+    background-color: $color-grey;
     color: $color-white;
     
     &__logo {
@@ -17,13 +17,11 @@
         gap: 10px;
         list-style: none;
         margin: 0px 0px 40px 25px;
+        i.fa-utensils {
+            margin-right: 13px;
+        }
+        i.fa-handshake-angle {
+            margin-right: 7px;
+        }
     }
-}
-
-.fa-utensils {
-    margin-right: 13px;
-}
-
-.fa-handshake-angle {
-    margin-right: 7px;
 }

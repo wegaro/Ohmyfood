@@ -1,18 +1,39 @@
 // Index
 
 @use '../utils/variables' as *;
+@use '../utils/mixins' as *; //Do I use this to bring mixins here?
 
 .header-index {
 	text-align: center;
+	&__logo {
+		padding-top: 10px;
+		margin: 0px 0px 5px 0px;
+		box-shadow: rgba(0, 0, 0, 0.26) 0px 3px 10px;
+	}
 }
 
 .location {
 	&__search {
 		background-color: $bg-dark-grey;
+		color: $color-grey;
+		padding: 10px;
+		i {
+			color: $color-grey;
+			margin-right: 10px;
+		}
 	}
-	
 	&__explore {
+		@include flex-center;
+		flex-direction: column;
 		background-color: $bg-light-grey;
+		padding: 40px 0px 50px 0px;
+		font-size: 18px;
+	}
+	&__discover {
+		padding: 30px 0px 25px 0px;
+		font-weight: 100;
+		font-size: 18px;
+		width: 90%;
 	}
 }
 
@@ -20,9 +41,7 @@
 
 // Other HTML pages
 .header-menu {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flex-center;
 	height: 40px;
 	width: 100%;
 	margin-top: 20px;

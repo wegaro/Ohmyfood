@@ -1,10 +1,9 @@
 @forward './base/resets';
 @forward './utils/variables';
-
+@forward './utils/mixins';
 @forward "./layout/header.scss";
 @forward "./components/buttons.scss";
 @forward "./layout/nav.scss";
 @forward "./layout/cards.scss";
 @forward './base/typography';
-
 @forward "./layout/footer.scss";

@@ -2,9 +2,14 @@
 @use '../utils/mixins' as *;
 
 
-
-img {
-    width: 300px;
-    height: 200px;
+.restaurants-container {
+    @include flex-center;
+    flex-direction: column;
+    &__card {
+      width: 100%;
+    }
+    img {
+      width: 300px;
+      height: 200px;
+    }
 }
-

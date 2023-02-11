@@ -6,10 +6,10 @@
     width: 100%;
     background-color: $color-grey;
     color: $color-white;
-    
     &__logo {
         font-size: 18px;
         margin: 25px;
+        cursor: pointer;
     }
     &__list {
         display: flex;
@@ -17,10 +17,10 @@
         gap: 10px;
         list-style: none;
         margin: 0px 0px 40px 25px;
-        i.fa-utensils {
+        .fa-utensils {
             margin-right: 13px;
         }
-        i.fa-handshake-angle {
+        .fa-handshake-angle {
             margin-right: 7px;
         }
     }

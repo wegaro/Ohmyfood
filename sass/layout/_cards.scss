@@ -1,15 +1,48 @@
 @use '../utils/variables' as *;
 @use '../utils/mixins' as *;
 
+.restaurants {
+  &__title {
+    padding: 40px 0px 20px 30px;
+    background-color: $bg-light-grey;
+    font-size: 25px
+  }
+}
 
 .restaurants-container {
     @include flex-center;
+    background-color: $bg-light-grey;
     flex-direction: column;
+    gap: 20px;
     &__card {
-      width: 100%;
+      @include card;
+      &__link {
+        @include fullcard-pointer;
+      }
     }
     img {
-      width: 300px;
+      border-radius: 15px 15px 0px 0px;
+      object-fit: cover;
       height: 200px;
+      width: 100%;
     }
+    &__new {
+      @include sign-new;
+      color: darken($color-tertiary, 38);
+      top: 116%;
+    }
+    &__title {
+      inline-size: 70%;
+      margin-top: 13px;
+      margin-left: 12px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__title2 {
+      font-weight: 300;
+    }
+}
+
+.btn-heart {
+  @include btn-heart;
 }

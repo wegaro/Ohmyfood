@@ -12,3 +12,7 @@
     @include btn-shadow;
     width: 215px;
 }
+
+.btn-heart {
+    @include btn-heart;
+}

@@ -42,8 +42,13 @@
 // Other HTML pages
 .header-menu {
 	@include flex-center;
-	height: 40px;
+	height: 60px;
 	width: 100%;
 	margin-top: 20px;
 	position: relative;
+  i {
+    margin-left: -80px;
+    font-size: 22px;
+    font-weight: 800;
+  }
 }

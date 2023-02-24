@@ -9,10 +9,25 @@
     font-size: 15px;
     height: 45px;
     @include btn-color;
-    @include btn-shadow;
+    @include element-shadow;
     width: 215px;
 }
 
 .btn-heart {
     @include btn-heart;
+}
+
+.order {
+    @include flex-center;
+    &__button{
+      border: none;
+      border-radius: 25px;
+      color: $color-white;
+      cursor: pointer;
+      font-size: 15px;
+      height: 45px;
+      @include btn-color;
+      @include element-shadow;
+      width: 215px;
+    }
 }

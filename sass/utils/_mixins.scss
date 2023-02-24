@@ -6,26 +6,12 @@
     justify-content: center;
 }
 
-@mixin btn-shadow {
+@mixin element-shadow {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
 }
 
 @mixin btn-color {
     background: linear-gradient($color-secondary 10%, $color-primary 150%);
- }
-
-@mixin sign-new
- {
-    font-weight: 500;
-    height: 30px;
-    width: 80px;
-    text-align: center;
-    position: absolute;
-    margin-top: 15px;
-    right: 35px;
-    border: 2px $color-tertiary solid;
-    background-color: $color-tertiary;
-    border-radius: 2px;
  }
 
 @mixin card 
@@ -35,7 +21,7 @@
     background-color: $color-white;
     border-radius: 15px;
     cursor: pointer;
-    @include btn-shadow;
+    @include element-shadow;
 }
 
 @mixin fullcard-pointer

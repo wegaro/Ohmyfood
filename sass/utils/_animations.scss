@@ -1,0 +1,104 @@
+@use '../utils/variables' as *;
+
+// Loader
+
+.loader
+{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,255,255,0.9);
+    animation: loader-bg 0.01s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+    animation-delay: 1.75s;
+}
+
+.loader-logo
+{
+  border: 15px $color-primary solid;
+  border-top: 15px solid $color-secondary;
+  border-bottom: 15px solid $color-tertiary;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  animation: loader 2500ms linear;
+}
+
+@keyframes loader-bg
+{
+  0%
+  {
+    opacity: 1;
+  }
+
+  100%
+  {
+    opacity: 0;
+    z-index: -9999;
+  }
+}
+
+@keyframes loader
+{
+  0%
+  {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  50%
+  {
+    transform: rotate(250deg);
+    opacity: 0;
+  }
+
+  100%
+  {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+
+// Cards appearing in menu
+
+.menu-submenu__cards
+{
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+.main-dish
+{
+  animation-delay: .25s;
+}
+
+.desserts
+{
+  animation-delay: .50s;
+}
+
+
+@keyframes appear 
+{
+  from 
+  {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

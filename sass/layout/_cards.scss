@@ -29,18 +29,21 @@
       }
     }
     &__new {
+      position: absolute;
+      &__card {
+      top: -200px;
+      right: -225px;
       font-weight: 500;
       height: 30px;
       width: 80px;
       text-align: center;
-      position: absolute;
+      position: relative;
       margin-top: 15px;
-      right: 35px;
       border: 2px $color-tertiary solid;
       background-color: $color-tertiary;
       border-radius: 2px;
-      color: darken($color-tertiary, 38);
-      top: 116%;
+      color: darken($color-tertiary, 38);        
+      }
     }
     &__title {
       inline-size: 70%;

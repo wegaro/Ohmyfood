@@ -8,7 +8,7 @@
 a {
   text-decoration: none;
 }
-a:visited, a :active {
+a:visited, a:active {
   color: inherit;
 }
 
@@ -113,6 +113,33 @@ a:visited, a :active {
     opacity: 1;
   }
 }
+.btn-heart .full-heart {
+  position: absolute;
+  right: 25px;
+  top: 225px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-size: 1em;
+}
+.btn-heart .empty-heart {
+  position: absolute;
+  right: 25px;
+  top: 225px;
+}
+.btn-heart:hover .full-heart {
+  opacity: 1;
+  font-size: 2em;
+  right: 25px;
+  top: 225px;
+  transition-duration: 0.6s;
+}
+.btn-heart:hover .empty-heart {
+  transition-duration: 1s;
+  opacity: 0;
+}
+
 .menu-submenu__cards {
   animation-name: appear;
   animation-duration: 1000ms;
@@ -156,7 +183,6 @@ a:visited, a :active {
   height: 34px;
   cursor: pointer;
   overflow: hidden;
-  position: relative;
 }
 
 .order {
@@ -222,6 +248,7 @@ a:visited, a :active {
   gap: 20px;
 }
 .restaurants-container__card {
+  position: relative;
   width: 90%;
   height: 280px;
   background-color: white;
@@ -244,16 +271,13 @@ a:visited, a :active {
   width: 100%;
 }
 .restaurants-container__new {
-  position: absolute;
-}
-.restaurants-container__new__card {
-  top: -200px;
-  right: -225px;
+  top: -1px;
+  right: 15px;
   font-weight: 500;
   height: 30px;
   width: 80px;
   text-align: center;
-  position: relative;
+  position: absolute;
   margin-top: 15px;
   border: 2px #99E2D0 solid;
   background-color: #99E2D0;
@@ -278,7 +302,6 @@ a:visited, a :active {
   height: 34px;
   cursor: pointer;
   overflow: hidden;
-  position: relative;
 }
 
 img {

@@ -68,6 +68,39 @@
   }
 }
 
+// Heart animation
+
+.btn-heart {
+  .full-heart {
+    position: absolute;
+    right: 25px;
+    top: 225px;
+    background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    font-size: 1em;
+  }
+  .empty-heart {
+    position: absolute;
+    right: 25px;
+    top: 225px;
+  }
+  &:hover {
+    .full-heart {
+      opacity: 1;
+      font-size: 2em;
+      right: 25px;
+      top: 225px;
+      transition-duration: .60s;
+    }
+    .empty-heart {
+      transition-duration: 1s;
+      opacity: 0;
+    }
+  }
+}
+
 
 // Cards appearing in menu
 

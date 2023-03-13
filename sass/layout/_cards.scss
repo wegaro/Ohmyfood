@@ -17,6 +17,7 @@
     flex-direction: column;
     gap: 20px;
     &__card {
+      position: relative;
       @include card;
       &__link {
         @include fullcard-pointer;
@@ -29,22 +30,19 @@
       }
     }
     &__new {
-      position: absolute;
-      &__card {
-      top: -200px;
-      right: -225px;
+      top: -1px;
+      right: 15px;
       font-weight: 500;
       height: 30px;
       width: 80px;
       text-align: center;
-      position: relative;
+      position: absolute;
       margin-top: 15px;
       border: 2px $color-tertiary solid;
       background-color: $color-tertiary;
       border-radius: 2px;
       color: darken($color-tertiary, 38);        
       }
-    }
     &__title {
       inline-size: 70%;
       margin-top: 13px;

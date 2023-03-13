@@ -113,10 +113,13 @@ a:visited, a:active {
     opacity: 1;
   }
 }
-.btn-heart .full-heart {
+.btn-heart {
   position: absolute;
   right: 25px;
-  top: 225px;
+  top: 200px;
+}
+.btn-heart .full-heart {
+  position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -125,14 +128,10 @@ a:visited, a:active {
 }
 .btn-heart .empty-heart {
   position: absolute;
-  right: 25px;
-  top: 225px;
 }
 .btn-heart:hover .full-heart {
   opacity: 1;
   font-size: 2em;
-  right: 25px;
-  top: 225px;
   transition-duration: 0.6s;
 }
 .btn-heart:hover .empty-heart {
@@ -179,8 +178,8 @@ a:visited, a:active {
 .btn-heart {
   border: none;
   background-color: transparent;
-  width: 45px;
-  height: 34px;
+  width: 55px;
+  height: 50px;
   cursor: pointer;
   overflow: hidden;
 }
@@ -298,8 +297,8 @@ a:visited, a:active {
 .btn-heart {
   border: none;
   background-color: transparent;
-  width: 45px;
-  height: 34px;
+  width: 55px;
+  height: 50px;
   cursor: pointer;
   overflow: hidden;
 }

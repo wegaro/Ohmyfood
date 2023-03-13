@@ -404,5 +404,8 @@ h1, h2 {
 .footer-nav__list .fa-handshake-angle {
   margin-right: 7px;
 }
+.footer-nav__list a[href^="mailto:"] {
+  color: inherit;
+}
 
 /*# sourceMappingURL=style.css.map */

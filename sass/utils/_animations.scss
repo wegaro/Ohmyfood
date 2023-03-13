@@ -4,16 +4,16 @@
 
 .loader
 {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(255,255,255,0.9);
-    animation: loader-bg 0.01s;
-    animation-fill-mode: forwards;
-    z-index: 100;
-    animation-delay: 1.75s;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(255,255,255,0.9);
+  animation: loader-bg 0.01s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+  animation-delay: 1.75s;
 }
 
 .loader-logo

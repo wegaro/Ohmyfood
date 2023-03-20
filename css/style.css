@@ -137,12 +137,12 @@ a, :visited, :active {
   opacity: 0;
 }
 
-.btn-heart2 {
+.btn-heart-menu {
   position: absolute;
   right: 120px;
   top: 30px;
 }
-.btn-heart2 .full-heart {
+.btn-heart-menu .full-heart {
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
@@ -150,15 +150,15 @@ a, :visited, :active {
   opacity: 0;
   font-size: 1em;
 }
-.btn-heart2 .empty-heart {
+.btn-heart-menu .empty-heart {
   position: absolute;
 }
-.btn-heart2:hover .full-heart {
+.btn-heart-menu:hover .full-heart {
   opacity: 1;
   font-size: 2em;
   transition-duration: 0.6s;
 }
-.btn-heart2:hover .empty-heart {
+.btn-heart-menu:hover .empty-heart {
   transition-duration: 1s;
   opacity: 0;
 }

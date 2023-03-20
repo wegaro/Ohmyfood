@@ -137,6 +137,32 @@ a, :visited, :active {
   opacity: 0;
 }
 
+.btn-heart2 {
+  position: absolute;
+  right: 120px;
+  top: 30px;
+}
+.btn-heart2 .full-heart {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-size: 1em;
+}
+.btn-heart2 .empty-heart {
+  position: absolute;
+}
+.btn-heart2:hover .full-heart {
+  opacity: 1;
+  font-size: 2em;
+  transition-duration: 0.6s;
+}
+.btn-heart2:hover .empty-heart {
+  transition-duration: 1s;
+  opacity: 0;
+}
+
 .menu-submenu__cards {
   animation-name: appear;
   animation-duration: 1000ms;
@@ -161,6 +187,40 @@ a, :visited, :active {
     transform: translateY(0);
   }
 }
+.selection {
+  transition: all 0.51s ease-in-out;
+}
+
+.btn-select {
+  position: absolute;
+  top: -31px;
+  right: -80px;
+  background-color: #99E2D0;
+  height: 70px;
+  width: 70px;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  transition: all 0.5s ease-in-out;
+}
+.btn-select .fa-circle-check {
+  color: white;
+  transform: rotate(360deg);
+  transition-duration: 0.6s;
+}
+
+.menu-submenu__cards__card:hover {
+  cursor: pointer;
+}
+.menu-submenu__cards__card:hover .selection {
+  right: 80px;
+}
+.menu-submenu__cards__card:hover .btn-select {
+  right: -1px;
+}
+.menu-submenu__cards__card:hover .fa-circle-check {
+  transform: rotate(0deg);
+}
+
 .location__button {
   border: none;
   border-radius: 25px;
@@ -243,6 +303,7 @@ a, :visited, :active {
   background-color: #F6F6F6;
   flex-direction: column;
   gap: 20px;
+  padding-bottom: 60px;
 }
 .restaurants-container__card {
   position: relative;
@@ -342,30 +403,34 @@ img {
 }
 .menu-submenu__cards__card {
   width: 100%;
-  height: 60px;
+  height: 70px;
   background-color: white;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  overflow: hidden;
+}
+.menu-submenu__cards__card__title {
+  padding: 12px 0px 0px 10px;
 }
 .menu-submenu__cards__card__text {
-  padding: 5px;
-  margin-left: 5px;
-  line-height: 25px;
+  padding: 0px 0px 5px 10px;
   width: 100%;
-}
-.menu-submenu__cards__card__text__title {
-  font-weight: 500;
+  position: relative;
 }
 .menu-submenu__cards__card__text__subtitle {
+  padding: 10px 0px 5px 0px;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
+  width: 87%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
-.menu-submenu__cards__card__text__price {
+.menu-submenu__cards__card__text__subtitle__price {
   font-weight: 500;
-  position: relative;
-  left: 80%;
-  top: -30px;
-  width: 15%;
+  position: absolute;
+  top: 9px;
+  right: 15px;
 }
 
 body {

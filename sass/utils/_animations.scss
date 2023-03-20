@@ -1,6 +1,6 @@
 @use '../utils/variables' as *;
 
-// Loader
+// Spin loader
 
 .loader
 {
@@ -98,6 +98,34 @@
   }
 }
 
+.btn-heart2 {
+  position: absolute;
+  right: 120px;
+  top: 30px;
+.full-heart {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from($color-primary), to($color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  font-size: 1em;
+}
+.empty-heart {
+  position: absolute;
+}
+&:hover {
+  .full-heart {
+    opacity: 1;
+    font-size: 2em;
+    transition-duration: .60s;
+  }
+  .empty-heart {
+    transition-duration: 1s;
+    opacity: 0;
+  }
+}
+}
+
 
 // Cards appearing in menu
 
@@ -132,3 +160,42 @@
     transform: translateY(0);
   }
 }
+
+
+// Dish selection animation
+
+  .selection {
+    transition: all 0.51s ease-in-out;
+  }
+
+  .btn-select {  
+    position: absolute;
+    top: -31px;
+    right: -80px;
+    background-color: $color-tertiary;
+    height: 70px;
+    width: 70px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    transition: all 0.5s ease-in-out;
+    .fa-circle-check {
+      color: white;
+      transform: rotate(360deg);
+      transition-duration: .60s;
+    }
+  }
+
+  .menu-submenu__cards__card {
+    &:hover {
+      cursor: pointer;
+      .selection {
+        right: 80px;
+      }
+      .btn-select {
+        right: -1px;
+      }
+      .fa-circle-check {
+        transform: rotate(0deg);
+      }
+    }
+  }

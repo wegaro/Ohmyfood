@@ -129,29 +129,29 @@
 
 // Cards appearing in menu
 
-.menu-submenu__cards
-{
+.menu-submenu__cards__card {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
+  }
+
+.card1-appear {
+  animation-delay: .20s;
 }
 
-.main-dish
-{
-  animation-delay: .25s;
+.card2-appear {
+  animation-delay: .30s;
 }
 
-.desserts
-{
+.card3-appear {
   animation-delay: .50s;
 }
-
 
 @keyframes appear 
 {
   from 
   {
-    transform: translateY(-100px);
+    transform: translateY(10px);
     opacity: 0;
   }
   to 
@@ -162,10 +162,15 @@
 }
 
 
+
 // Dish selection animation
 
+  .adjust {
+    transition: all 0.50s ease-in-out;
+  }
+
   .selection {
-    transition: all 0.51s ease-in-out;
+    transition: all 0.49s ease-in-out;
   }
 
   .btn-select {  
@@ -173,21 +178,24 @@
     top: -31px;
     right: -80px;
     background-color: $color-tertiary;
-    height: 70px;
+    height: 75px;
     width: 70px;
     border: none;
     border-radius: 0px 15px 15px 0px;
     transition: all 0.5s ease-in-out;
     .fa-circle-check {
       color: white;
-      transform: rotate(360deg);
-      transition-duration: .60s;
+      transform: rotate(800deg);
+      transition-duration: .70s;
     }
   }
 
   .menu-submenu__cards__card {
     &:hover {
       cursor: pointer;
+      .adjust {
+        width: 60%;
+      }
       .selection {
         right: 80px;
       }

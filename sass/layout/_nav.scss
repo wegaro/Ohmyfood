@@ -21,11 +21,23 @@
         border-radius: 20px;
         height: 70px;
         @include element-shadow;
-        @include flex-center;
+        display: flex;
+        align-items: center;
         margin: 5px;
         font-weight: 500;
+        font-size: 17px;
         &:hover {
-            background-color: lighten($color-primary, 35);
+          background-color: lighten($color-primary, 35);
+          > i {
+            color: $color-primary;
+          }
         }
     }
 }
+
+.how-works__nav > li > i {
+    font-size: 18px;
+    color: grey;
+    margin: 20px 20px 20px 35px;
+}
+

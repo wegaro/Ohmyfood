@@ -163,23 +163,27 @@ a, :visited, :active {
   opacity: 0;
 }
 
-.menu-submenu__cards {
+.menu-submenu__cards__card {
   animation-name: appear;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
 }
 
-.main-dish {
-  animation-delay: 0.25s;
+.card1-appear {
+  animation-delay: 0.2s;
 }
 
-.desserts {
+.card2-appear {
+  animation-delay: 0.3s;
+}
+
+.card3-appear {
   animation-delay: 0.5s;
 }
 
 @keyframes appear {
   from {
-    transform: translateY(-100px);
+    transform: translateY(10px);
     opacity: 0;
   }
   to {
@@ -187,8 +191,12 @@ a, :visited, :active {
     transform: translateY(0);
   }
 }
+.adjust {
+  transition: all 0.5s ease-in-out;
+}
+
 .selection {
-  transition: all 0.51s ease-in-out;
+  transition: all 0.49s ease-in-out;
 }
 
 .btn-select {
@@ -196,7 +204,7 @@ a, :visited, :active {
   top: -31px;
   right: -80px;
   background-color: #99E2D0;
-  height: 70px;
+  height: 75px;
   width: 70px;
   border: none;
   border-radius: 0px 15px 15px 0px;
@@ -204,12 +212,15 @@ a, :visited, :active {
 }
 .btn-select .fa-circle-check {
   color: white;
-  transform: rotate(360deg);
-  transition-duration: 0.6s;
+  transform: rotate(800deg);
+  transition-duration: 0.7s;
 }
 
 .menu-submenu__cards__card:hover {
   cursor: pointer;
+}
+.menu-submenu__cards__card:hover .adjust {
+  width: 60%;
 }
 .menu-submenu__cards__card:hover .selection {
   right: 80px;
@@ -248,6 +259,7 @@ a, :visited, :active {
   justify-content: center;
 }
 .order__button {
+  margin-top: 15px;
   border: none;
   border-radius: 25px;
   color: white;
@@ -282,12 +294,21 @@ a, :visited, :active {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
   display: flex;
   align-items: center;
-  justify-content: center;
   margin: 5px;
   font-weight: 500;
+  font-size: 17px;
 }
 .how-works__step:hover {
   background-color: #f2eafb;
+}
+.how-works__step:hover > i {
+  color: #9356DC;
+}
+
+.how-works__nav > li > i {
+  font-size: 18px;
+  color: grey;
+  margin: 20px 20px 20px 35px;
 }
 
 .restaurants__title {
@@ -362,31 +383,33 @@ a, :visited, :active {
   overflow: hidden;
 }
 
-img {
+.main-menu {
+  background-color: #F6F6F6;
+}
+.main-menu img {
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
-
-.container-menu {
+.main-menu .container-menu {
   position: relative;
   top: -55px;
   padding: 30px 10px 20px 10px;
   border-radius: 60px 60px 0px 0px;
   background-color: #F6F6F6;
 }
-.container-menu__title {
+.main-menu .container-menu__title {
   display: flex;
   padding-left: 15px;
 }
-.container-menu__submenu {
+.main-menu .container-menu__submenu {
   padding: 20px;
 }
-.container-menu__submenu__subcontainer {
+.main-menu .container-menu__submenu__subcontainer {
   border-bottom: #99E2D0 3px solid;
   width: 40px;
 }
-.container-menu__submenu__subtitle {
+.main-menu .container-menu__submenu__subtitle {
   font-size: 16px;
   font-weight: 300;
   padding: 10px 10px 8px 0px;

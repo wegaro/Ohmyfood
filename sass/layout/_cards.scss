@@ -7,7 +7,7 @@
   &__title {
     padding: 40px 0px 20px 30px;
     background-color: $bg-light-grey;
-    font-size: 25px
+    font-size: 25px;
   }
 }
 
@@ -78,6 +78,7 @@
     &__title {
       display: flex;
       padding-left: 15px;
+      width: 65%;
     }
     &__submenu {
       padding: 20px;
@@ -103,6 +104,7 @@
   flex-direction: column;
   gap: 10px;
   margin: 15px 0px 10px 0px;
+  width: 100%;
   &__card {
     width: 100%;
     height: 70px;
@@ -118,7 +120,7 @@
       width: 100%;
       position: relative;
       &__subtitle {
-        padding: 10px 0px 5px 0px;
+        padding: 7px 0px 5px 0px;
         font-weight: 300;
         font-size: 16px;
         width: 87%;
@@ -133,5 +135,13 @@
         }
       }      
     }
+  }
+}
+
+.card-adjust {
+  height: 95px;
+  .title-adjust {
+    width: 75%;
+    line-height: 23px;
   }
 }

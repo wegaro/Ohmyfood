@@ -205,10 +205,10 @@ a, :visited, :active {
 
 .btn-select {
   position: absolute;
-  top: -31px;
+  top: 0px;
   right: -80px;
   background-color: #99E2D0;
-  height: 75px;
+  height: 100%;
   width: 70px;
   border: none;
   border-radius: 0px 15px 15px 0px;
@@ -437,6 +437,7 @@ a, :visited, :active {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
   overflow: hidden;
+  position: relative;
 }
 .menu-submenu__cards__card__title {
   padding: 12px 0px 0px 10px;
@@ -458,7 +459,7 @@ a, :visited, :active {
 .menu-submenu__cards__card__text__subtitle__price {
   font-weight: 500;
   position: absolute;
-  top: 9px;
+  top: 6px;
   right: 15px;
 }
 

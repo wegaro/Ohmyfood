@@ -112,6 +112,7 @@
     border-radius: 15px;
     @include element-shadow;
     overflow: hidden;
+    position: relative;
     &__title {
       padding: 12px 0px 0px 10px;
     }
@@ -130,7 +131,7 @@
         &__price {
           font-weight: 500;
           position: absolute;
-          top: 9px;
+          top: 6px;
           right: 15px;
         }
       }      

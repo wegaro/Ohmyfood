@@ -34,6 +34,12 @@
       @include element-shadow;
       height: 45px;
       width: 215px;
+      &:hover {
+        transform: scale(1.05);
+        transition: all 0.2s ease;
+        box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 15px;
+        background: linear-gradient(#f485d4 20%, #b27cf4 100%);
+      }
     }
 }
 

@@ -43,6 +43,12 @@ a, :visited, :active {
   font-size: 18px;
   width: 90%;
 }
+.location__button:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+  background: linear-gradient(#f485d4 20%, #b27cf4 100%);
+}
 
 .header-menu {
   display: flex;
@@ -278,6 +284,12 @@ a, :visited, :active {
   height: 45px;
   width: 215px;
 }
+.order__button:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+  background: linear-gradient(#f485d4 20%, #b27cf4 100%);
+}
 
 .how-works {
   display: flex;
@@ -344,6 +356,10 @@ a, :visited, :active {
   border-radius: 15px;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+.restaurants-container__card:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
 }
 .restaurants-container__card__link {
   position: absolute;

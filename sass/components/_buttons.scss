@@ -11,6 +11,9 @@
     width: 215px;
     @include btn-color;
     @include element-shadow;
+    p {
+      padding-top: 14px;
+    }
 }
 
 .btn-heart {
@@ -20,7 +23,8 @@
 .order {
     @include flex-center;
     &__button{
-      margin-top: 15px;
+      padding-top: 15px;
+      text-align: center;
       border: none;
       border-radius: 25px;
       color: $color-white;

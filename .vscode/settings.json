@@ -1,9 +1,32 @@
 {
     "cSpell.words": [
+        "Angust",
         "Belleville",
+        "brulée",
+        "Carpaccio",
+        "crea",
+        "Crème",
+        "Foei",
+        "Foie",
         "fullcard",
+        "gnocchis",
+        "Magret",
         "menuimg",
+        "Napolean",
         "ohmyfood",
-        "subcontainer"
-    ]
+        "Oscietra",
+        "Provincal",
+        "Revisted",
+        "rhum",
+        "subcontainer",
+        "yuzu"
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:Ohmyfood}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
 }

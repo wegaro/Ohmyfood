@@ -247,6 +247,9 @@ a, :visited, :active {
   background: linear-gradient(#FF79DA 10%, #9356DC 150%);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
 }
+.location__button p {
+  padding-top: 14px;
+}
 
 .btn-heart {
   border: none;
@@ -263,7 +266,8 @@ a, :visited, :active {
   justify-content: center;
 }
 .order__button {
-  margin-top: 15px;
+  padding-top: 15px;
+  text-align: center;
   border: none;
   border-radius: 25px;
   color: white;
@@ -525,7 +529,7 @@ h1, h2 {
   .location__button {
     height: 50px;
     width: 250px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .how-works {
     padding: 40px 200px 45px 200px;
@@ -601,7 +605,10 @@ h1, h2 {
   .location__button {
     height: 55px;
     width: 240px;
-    font-size: 17px;
+    font-size: 16px;
+  }
+  .location__button p {
+    padding-top: 16px;
   }
   .how-works {
     align-items: center;

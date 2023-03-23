@@ -30,7 +30,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  animation: loader 2500ms linear;
+  animation: loader 1300ms linear;
 }
 
 @keyframes loader-bg
@@ -80,7 +80,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-    font-size: 1em;
+    font-size: 0.5em;
   }
   .empty-heart {
     position: absolute;
@@ -108,7 +108,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  font-size: 1em;
+  font-size: 0.5em;
 }
 .empty-heart {
   position: absolute;

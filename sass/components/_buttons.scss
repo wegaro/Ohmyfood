@@ -26,9 +26,9 @@
       color: $color-white;
       cursor: pointer;
       font-size: 15px;
-      height: 45px;
       @include btn-color;
       @include element-shadow;
+      height: 45px;
       width: 215px;
     }
 }

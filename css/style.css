@@ -51,10 +51,10 @@ a, :visited, :active {
   height: 60px;
   width: 100%;
   margin-top: 20px;
-  position: relative;
+  padding-bottom: 15px;
 }
 .header-menu i {
-  margin-left: -80px;
+  margin-left: -75px;
   font-size: 22px;
   font-weight: 800;
 }
@@ -85,7 +85,7 @@ a, :visited, :active {
   right: 0;
   left: 0;
   bottom: 0;
-  animation: loader 2500ms linear;
+  animation: loader 1300ms linear;
 }
 
 @keyframes loader-bg {
@@ -122,7 +122,7 @@ a, :visited, :active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  font-size: 1em;
+  font-size: 0.5em;
 }
 .btn-heart .empty-heart {
   position: absolute;
@@ -148,7 +148,7 @@ a, :visited, :active {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
-  font-size: 1em;
+  font-size: 0.5em;
 }
 .btn-heart-menu .empty-heart {
   position: absolute;
@@ -269,13 +269,15 @@ a, :visited, :active {
   color: white;
   cursor: pointer;
   font-size: 15px;
-  height: 45px;
   background: linear-gradient(#FF79DA 10%, #9356DC 150%);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  height: 45px;
   width: 215px;
 }
 
 .how-works {
+  display: flex;
+  flex-direction: column;
   padding: 50px 15px 40px 20px;
 }
 .how-works h3 {
@@ -309,7 +311,7 @@ a, :visited, :active {
   color: #9356DC;
 }
 
-.how-works__nav > li > i {
+.how-works__nav > div > i {
   font-size: 18px;
   color: grey;
   margin: 20px 20px 20px 35px;
@@ -367,12 +369,13 @@ a, :visited, :active {
   border-radius: 2px;
   color: #299077;
 }
+.restaurants-container__new p {
+  padding-top: 3px;
+}
 .restaurants-container__title {
-  inline-size: 70%;
   margin-top: 13px;
   margin-left: 12px;
   font-size: 20px;
-  line-height: 25px;
 }
 .restaurants-container__title2 {
   font-weight: 300;
@@ -512,7 +515,7 @@ h1, h2 {
   color: inherit;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .location p {
     font-size: 1.2em;
   }
@@ -537,7 +540,7 @@ h1, h2 {
   .how-works__step {
     font-size: 20px;
   }
-  .how-works__nav > li > i {
+  .how-works__nav > div > i {
     font-size: 20px;
     margin: 20px 20px 20px 40px;
   }
@@ -553,13 +556,16 @@ h1, h2 {
     flex-direction: row;
     padding-top: 40px;
     text-align: center;
+    justify-content: center;
   }
   .footer-nav__logo {
     font-size: 24px;
-    margin: 35px 0px 0px 180px;
+    margin: -8px;
   }
   .footer-nav__list {
-    font-size: 16px;
+    flex-direction: row;
+    font-size: 18px;
+    gap: 20px;
   }
   .main-menu {
     align-items: center;
@@ -583,6 +589,146 @@ h1, h2 {
   }
   .btn-heart-menu {
     right: 115px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .location p {
+    font-size: 1.1em;
+  }
+  .location h3 {
+    font-size: 1.3em;
+  }
+  .location__button {
+    height: 55px;
+    width: 240px;
+    font-size: 17px;
+  }
+  .how-works {
+    align-items: center;
+  }
+  .how-works h3 {
+    text-align: center;
+    font-size: 28px;
+  }
+  .how-works__number {
+    font-size: 17px;
+    border-radius: 50%;
+    padding: 5px 10px;
+    top: 55px;
+  }
+  .how-works__step {
+    width: 400px;
+    height: 80px;
+    font-size: 18px;
+  }
+  .how-works__nav > div > i {
+    font-size: 24px;
+    margin: 20px 20px 20px 45px;
+  }
+  .restaurants__title {
+    padding: 40px 0px 40px 0px;
+    font-size: 30px;
+  }
+  .restaurants-container {
+    gap: 50px;
+    padding: 0px 70px 70px 70px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurants-container__card {
+    width: 35%;
+    height: 390px;
+  }
+  .restaurants-container img {
+    height: 300px;
+  }
+  .restaurants-container__new {
+    height: 35px;
+    width: 85px;
+    font-size: 18px;
+    right: 20px;
+  }
+  .restaurants-container__new p {
+    padding-top: 5px;
+  }
+  .restaurants-container__title {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 16px;
+  }
+  .restaurants-container__title2 {
+    margin-top: 6px;
+    font-size: 18px;
+  }
+  .btn-heart {
+    top: 310px;
+  }
+  .footer-nav {
+    gap: 15px;
+  }
+  .footer-nav__logo {
+    font-size: 22px;
+    margin: -5px 0px 0px 0px;
+  }
+  .footer-nav__list {
+    font-size: 16px;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-menu {
+    font-size: 16px;
+  }
+  .header-menu i {
+    font-size: 26px;
+    margin-left: -80px;
+  }
+  .main-menu .container-menu {
+    padding: 30px 10px 40px 10px;
+    border-radius: 60px;
+    width: 40%;
+    align-items: center;
+  }
+  .main-menu .container-menu__title {
+    font-size: 20px;
+    margin-left: 70px;
+  }
+  .main-menu .container-menu__submenu {
+    width: 60%;
+  }
+  .main-menu .container-menu__submenu__subcontainer {
+    width: 55px;
+  }
+  .main-menu .container-menu__submenu__subtitle {
+    font-size: 16px;
+  }
+  .btn-heart-menu {
+    right: 215px;
+    top: 35px;
+  }
+  .menu-submenu__cards {
+    gap: 20px;
+  }
+  .menu-submenu__cards__card {
+    height: 80px;
+  }
+  .menu-submenu__cards__card__title {
+    font-size: 1.1em;
+    padding: 16px 0px 0px 16px;
+  }
+  .menu-submenu__cards__card__text {
+    padding: 0px 0px 0px 16px;
+  }
+  .menu-submenu__cards__card__text__subtitle {
+    font-size: 17px;
+  }
+  .menu-submenu__cards__card__text__subtitle__price {
+    font-size: 1.1em;
+    top: 7px;
+  }
+  .order__button {
+    font-size: 16px;
+    height: 50px;
+    width: 230px;
   }
 }
 

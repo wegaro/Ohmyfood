@@ -2,6 +2,8 @@
 @use '../utils/mixins' as *;
 
 .how-works {
+    display: flex;
+    flex-direction: column;
     padding: 50px 15px 40px 20px;
     h3 {
         font-size: 25px;
@@ -35,7 +37,7 @@
     }
 }
 
-.how-works__nav > li > i {
+.how-works__nav > div > i {
     font-size: 18px;
     color: grey;
     margin: 20px 20px 20px 35px;

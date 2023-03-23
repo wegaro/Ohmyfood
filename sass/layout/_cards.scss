@@ -42,14 +42,15 @@
       border: 2px $color-tertiary solid;
       background-color: $color-tertiary;
       border-radius: 2px;
-      color: darken($color-tertiary, 38);        
+      color: darken($color-tertiary, 38);
+      p {
+        padding-top: 3px;
+      }        
       }
     &__title {
-      inline-size: 70%;
       margin-top: 13px;
       margin-left: 12px;
       font-size: 20px;
-      line-height: 25px;
     }
     &__title2 {
       font-weight: 300;

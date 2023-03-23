@@ -37,7 +37,6 @@
 	}
 }
 
-//@include (for mixins button)
 
 // Other HTML pages
 .header-menu {
@@ -45,9 +44,9 @@
 	height: 60px;
 	width: 100%;
 	margin-top: 20px;
-	position: relative;
-  i {
-    margin-left: -80px;
+	padding-bottom: 15px;
+  	i {
+    margin-left: -75px;
     font-size: 22px;
     font-weight: 800;
   }

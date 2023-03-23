@@ -243,9 +243,9 @@ a, :visited, :active {
   cursor: pointer;
   font-size: 15px;
   height: 45px;
+  width: 215px;
   background: linear-gradient(#FF79DA 10%, #9356DC 150%);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
-  width: 215px;
 }
 
 .btn-heart {
@@ -388,6 +388,8 @@ a, :visited, :active {
 }
 
 .main-menu {
+  display: flex;
+  flex-direction: column;
   background-color: #F6F6F6;
 }
 .main-menu img {
@@ -396,6 +398,8 @@ a, :visited, :active {
   object-fit: cover;
 }
 .main-menu .container-menu {
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: -55px;
   padding: 30px 10px 20px 10px;
@@ -506,6 +510,80 @@ h1, h2 {
 }
 .footer-nav__list a[href^="mailto:"] {
   color: inherit;
+}
+
+@media (min-width: 768px) {
+  .location p {
+    font-size: 1.2em;
+  }
+  .location h3 {
+    font-size: 1.5em;
+  }
+  .location__button {
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+  }
+  .how-works {
+    padding: 40px 200px 45px 200px;
+  }
+  .how-works h3 {
+    text-align: center;
+    font-size: 27px;
+  }
+  .how-works__number {
+    font-size: 16px;
+  }
+  .how-works__step {
+    font-size: 20px;
+  }
+  .how-works__nav > li > i {
+    font-size: 20px;
+    margin: 20px 20px 20px 40px;
+  }
+  .restaurants__title {
+    padding: 40px 0px 30px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .restaurants-container {
+    padding: 0px 70px 60px 70px;
+  }
+  .footer-nav {
+    flex-direction: row;
+    padding-top: 40px;
+    text-align: center;
+  }
+  .footer-nav__logo {
+    font-size: 24px;
+    margin: 35px 0px 0px 180px;
+  }
+  .footer-nav__list {
+    font-size: 16px;
+  }
+  .main-menu {
+    align-items: center;
+    background-color: #c1ede2;
+  }
+  .main-menuimg {
+    width: 100%;
+  }
+  .main-menu .container-menu {
+    padding: 30px 10px 40px 10px;
+    border-radius: 60px;
+    width: 75%;
+    align-items: center;
+  }
+  .main-menu .container-menu__title {
+    padding-left: 0px;
+    margin-left: -45px;
+  }
+  .main-menu .container-menu__submenu {
+    width: 80%;
+  }
+  .btn-heart-menu {
+    right: 115px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

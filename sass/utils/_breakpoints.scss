@@ -1,0 +1,96 @@
+@use '../utils/variables' as *;
+
+// Tablet Index breakpoints
+
+// Tablet Nav content
+@media (min-width: 768px) {
+  .location {
+    p {
+      font-size: 1.2em;
+    }
+    h3 {
+      font-size: 1.5em;
+    }
+    &__button {
+      height: 50px;
+      width: 250px;
+      font-size: 18px;
+    }
+  }
+
+  .how-works {
+    padding: 40px 200px 45px 200px;
+    h3 {
+      text-align: center;
+      font-size: 27px;
+    }
+  &__number {
+    font-size: 16px;
+  }
+  &__step {
+    font-size: 20px;
+  }
+  }
+
+  .how-works__nav > li > i {
+  font-size: 20px;
+  margin: 20px 20px 20px 40px;
+  }
+
+// Tablet - Index restaurants cards
+
+.restaurants {
+  &__title {
+    padding: 40px 0px 30px 0px;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.restaurants-container {
+  padding: 0px 70px 60px 70px;
+}
+
+// Tablet footer
+
+.footer-nav {
+  flex-direction: row;
+  padding-top: 40px;
+  text-align: center;
+  &__logo {
+    font-size: 24px;
+    margin: 35px 0px 0px 180px;
+  }
+  &__list {
+    font-size: 16px;
+  }
+}
+
+// Tablet Menu breakpoints
+
+.main-menu {
+  align-items: center;
+  background-color: lighten($color-tertiary, 10);
+  &img {
+    width: 100%;
+  }
+
+  .container-menu {
+    padding: 30px 10px 40px 10px;
+    border-radius: 60px;  
+    width: 75%;
+    align-items: center;
+    &__title {
+      padding-left: 0px;
+      margin-left: -45px;
+    }
+    &__submenu {
+      width: 80%;
+    }
+  }
+}
+
+.btn-heart-menu {
+  right: 115px;
+}
+}

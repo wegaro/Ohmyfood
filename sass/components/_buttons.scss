@@ -8,9 +8,9 @@
     cursor: pointer;
     font-size: 15px;
     height: 45px;
+    width: 215px;
     @include btn-color;
     @include element-shadow;
-    width: 215px;
 }
 
 .btn-heart {

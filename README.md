@@ -4,7 +4,7 @@ https://wegaro.github.io/Ohmyfood/
 
 ## About Ohmyfood
 
-Ohmyfood is an online food ordering company that allows user to compose their own menu and reduce wiaitng time in restaurants because they make their choice in advance.
+Ohmyfood is an online food ordering company that allows user to compose their own menu and reduce waiting time in restaurants because they make their choice in advance.
 
 ## Compatibility
 
